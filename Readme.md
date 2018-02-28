@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ольга Волкова](https://up.htmlacademy.ru/htmlcss/20/user/558307).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
