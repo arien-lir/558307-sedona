@@ -2,13 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>SEDONA</title>
+    <title>SEDONA: hotels</title>
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
        <a class="logo" href="index.html">
-         <img src="img/logo.svg" alt="логотип">
+         <img src="img/logo.svg" alt="logo">
        </a>
        <ul class="site-navigation">
          <li><a href="#">Информация</a></li>
@@ -23,20 +23,34 @@
         <h1 class="visually-hidden">Подбор жилья</h1>
         <form action="html://htmlacademy.ru" method="get">
           <h2>Инфраструктура:</h2>
-          <input type="checkbox">
-
-          </input>
+            <input type="checkbox" id="pool-mark" name="pool" checked>
+            <label>Бассейн</label>
+            <br>
+            <input type="checkbox" id="parking-mark" name="parking">
+            <label>Парковка</label>
+            <br>
+            <input type="checkbox" id="wifi-mark" name="wifi">
+            <label>Wi-Fi</label>
           <h2>Тип жилья:</h2>
-          <input type="checkbox">
-
-          </input>
+            <input type="checkbox" id="hotel-mark" name="hotel" checked>
+            <label>Гостиница</label>
+            <br>
+            <input type="checkbox" id="motel-mark" name="motel" checked>
+            <label>Мотель</label>
+            <br>
+            <input type="checkbox" id="apartments-mark" name="apartments" checked>
+            <label>Апартаменты</label>
+            <br>
           <h2>Стоимость в сутки (р):</h2>
-          <input type="range">
-
-          </input>
-          <input type="submit">
-
-          </input>
+            <table>
+              <tr>
+                <td>От 0</td>
+                <td>До 3000</td>
+              </tr>
+            </table>
+            <input type="range">
+            <br>
+            <input type="submit" value="Показать">
         </form>
       </section>
       <section class="result-form">
@@ -51,8 +65,8 @@
             <li class="sorting-gray"><a href="#">По рейтингу</a></li>
           </ul>
           <ul>
-            <li class="up"><a href="#"><img src="img/icon-up-dir.svg" alt="по возрастанию"></a></li>
-            <li class="down"><a href="#"><img src="img/icon-down-dir.svg" alt="по убыванию"></a></li>
+            <li class="up"><a href="#"><img src="img/icon-up-dir.svg" alt="up"></a></li>
+            <li class="down"><a href="#"><img src="img/icon-down-dir.svg" alt="down"></a></li>
           </ul>
         </div>
       </section>
@@ -65,15 +79,16 @@
               <span>Гостиница</span>
               <span>От 4000 р.</span>
             </div>
-            <a class="button-details" href="#">Подробнее</a>
-            <a class="button-book" href="#">Забронировать</a>
+            <div class="buttons">
+              <span><a class="button-details" href="#">Подробнее</a></span>
+              <span><a class="button-book" href="#">Забронировать</a></span>
+            </div>
             <div class="rating">
               <span class="stars-number"><img src="star" alt="star"></span>
               <span class="stars-number"><img src="star" alt="star"></span>
               <span class="stars-number"><img src="star" alt="star"></span>
               <span class="stars-number"><img src="star" alt="star"></span>
-              <span>Рейтинг:</span>
-              <span>8,5</span>
+              <span>Рейтинг: 8,5</span>
             </div>
           </article>
           <article class="desert">
@@ -83,14 +98,15 @@
               <span>Мотель</span>
               <span>От 3000 р.</span>
             </div>
-            <a class="button-details" href="#">Подробнее</a>
-            <a class="button-book" href="#">Забронировать</a>
+            <div class="buttons">
+              <span><a class="button-details" href="#">Подробнее</a></span>
+              <span><a class="button-book" href="#">Забронировать</a></span>
+            </div>
             <div class="rating">
               <span class="stars-number"><img src="star" alt="star"></span>
               <span class="stars-number"><img src="star" alt="star"></span>
               <span class="stars-number"><img src="star" alt="star"></span>
-              <span>Рейтинг:</span>
-              <span>8,9</span>
+              <span>Рейтинг: 8,9</span>
             </div>
           </article>
           <article class="villas">
@@ -100,13 +116,14 @@
               <span>Апартаменты</span>
               <span>От 2000 р.</span>
             </div>
-            <a class="button-details" href="#">Подробнее</a>
-            <a class="button-book" href="#">Забронировать</a>
+            <div class="buttons">
+              <span><a class="button-details" href="#">Подробнее</a></span>
+              <span><a class="button-book" href="#">Забронировать</a></span>
+            </div>
             <div class="rating">
               <span class="stars-number"><img src="star" alt="star"></span>
               <span class="stars-number"><img src="star" alt="star"></span>
-              <span>Рейтинг:</span>
-              <span>9,2</span>
+              <span>Рейтинг: 9,2</span>
             </div>
           </article>
       </section>
@@ -114,15 +131,17 @@
         <div class="tag">
           <a href="#">#visitSEDONA</a>
         </div>
-        <ul class="footer-social">
-          <li><a href="#"><img src="twitter" alt="twitter"></a></li>
-          <li><a href="#"><img src="fb" alt="facebook"></a></li>
-          <li><a href="#"><img src="youtube" alt="youtube"></a></li>
-        </ul>
+        <div class="footer-social">
+          <ul>
+            <li><a href="#"><img src="twitter.svg" alt="twitter"></a></li>
+            <li><a href="#"><img src="fb.svg" alt="facebook"></a></li>
+            <li><a href="#"><img src="youtube.svg" alt="youtube"></a></li>
+          </ul>
+        </div>
         <div class="developer-name">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <span>Website by</span>
-            <img src="htmlacademy-logo" alt="логотип htmlacademy">
+            <img src="htmlacademy-logo" alt="htmlacademy logo">
           </a>
         </div>
       </footer>
