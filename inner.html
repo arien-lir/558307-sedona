@@ -24,23 +24,18 @@
         <form action="html://htmlacademy.ru" method="get">
           <h2>Инфраструктура:</h2>
             <input type="checkbox" id="pool-mark" name="pool" checked>
-            <label>Бассейн</label>
-            <br>
+            <label for="pool-mark">Бассейн</label>
             <input type="checkbox" id="parking-mark" name="parking">
-            <label>Парковка</label>
-            <br>
+            <label for="parking-mark">Парковка</label>
             <input type="checkbox" id="wifi-mark" name="wifi">
-            <label>Wi-Fi</label>
+            <label for="wifi-mark">Wi-Fi</label>
           <h2>Тип жилья:</h2>
             <input type="checkbox" id="hotel-mark" name="hotel" checked>
-            <label>Гостиница</label>
-            <br>
+            <label for="hotel-mark">Гостиница</label>
             <input type="checkbox" id="motel-mark" name="motel" checked>
-            <label>Мотель</label>
-            <br>
+            <label for="motel-mark">Мотель</label>
             <input type="checkbox" id="apartments-mark" name="apartments" checked>
-            <label>Апартаменты</label>
-            <br>
+            <label for="apartments-mark">Апартаменты</label>
           <h2>Стоимость в сутки (р):</h2>
             <table>
               <tr>
@@ -49,7 +44,6 @@
               </tr>
             </table>
             <input type="range">
-            <br>
             <input type="submit" value="Показать">
         </form>
       </section>
@@ -99,8 +93,8 @@
               <span>От 3000 р.</span>
             </div>
             <div class="buttons">
-              <span><a class="button-details" href="#">Подробнее</a></span>
-              <span><a class="button-book" href="#">Забронировать</a></span>
+              <a class="button-details" href="#">Подробнее</a>
+              <a class="button-book" href="#">Забронировать</a>
             </div>
             <div class="rating">
               <span class="stars-number"><img src="star" alt="star"></span>
