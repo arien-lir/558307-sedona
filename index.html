@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>SEDONA</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
   <!--для main-navigation потом в css сделаю background-color: white width="1200" height="56"-->
+      <h1 class="visually-hidden">Главное меню</h1>
        <a class="logo">
-         <img src="img/logo.png" width="138" height="70" alt="logo">
+         <img src="img/logo.png" width="138" height="70" alt="логотип сайта">
        </a>
        <ul class="site-navigation">
          <li><a href="#">Информация</a></li>
@@ -31,48 +35,48 @@
           <div class="advantage-blue">
   <!--для advantage-blue потом в css сделаю background-color: #81b3d2 width="400" height="256"-->
             <h2>Настоящий городок</h2>
-            <span>— №1 —</span>
-            <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+            <span class="advantage-description">— №1 —</span>
+            <p class="advantage-description">Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img src="img/city-view.jpg" width="800" height="256" alt="city view">
+          <img src="img/city-view.jpg" width="800" height="256" alt="вид на город">
           <div class="advantage-white">
   <!--для advantage-white потом в css сделаю background-color: white width="1200" height="330"-->
-            <img src="" width="75" height="72" alt="housing"> <!--css-->
+            <img src="" width="75" height="72" alt="иконка жилье"> <!--css-->
             <h2>Жилье</h2>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <p class="advantage-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="advantage-white">
-            <img src="" width="74" height="70" alt="meal"> <!--css-->
+            <img src="" width="74" height="70" alt="иконка еда"> <!--css-->
             <h2>Еда</h2>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p class="advantage-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="advantage-white">
-            <img src="" width="64" height="76" alt="gift"> <!--css-->
+            <img src="" width="64" height="76" alt="иконка подарок"> <!--css-->
             <h2>Сувениры</h2>
-            <p>Не только китайского, но и местного производства!</p>
+            <p class="advantage-description">Не только китайского, но и местного производства!</p>
           </div>
           <div class="advantage-blue">
-          <img src="img/bridge.jpg" width="800" height="256" alt="bridge">
+          <img src="img/bridge.jpg" width="800" height="256" alt="мост">
             <h2>Там есть<br>
                 Мост дьявола</h2>
-            <span>— №2 —</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <span class="advantage-description">— №2 —</span>
+            <p class="advantage-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
           <div class="advantage-gray">
    <!--для advantage-gray потом в css сделаю background-color: #eeeeee width="1200" height="256"-->
             <h2>Небольшая площадь</h2>
-            <span>— №3 —</span>
-            <p>Все достопримечательности находятся очень близко</p>
+            <span class="advantage-description">— №3 —</span>
+            <p class="advantage-description">Все достопримечательности находятся очень близко</p>
           </div>
           <div class="advantage-gray">
             <h2>Красивая дорога</h2>
-            <span>— №4 —</span>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <span class="advantage-description">— №4 —</span>
+            <p class="advantage-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="advantage-gray">
             <h2>Мало туристов</h2>
-            <span>— №5 —</span>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
+            <span class="advantage-description">— №5 —</span>
+            <p class="advantage-description">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
       </section>
       <section class="call-to-action">
@@ -85,28 +89,28 @@
       </section>
       <section class="hotel-search-form">
         <form action="html://htmlacademy.ru" method="get">
-          <p><label for="arrival-field">Дата заезда:</label>
-            <input type="text" id="arrival-field" name="arrival" value="24 апреля 2017">
-            <button><img src="image/calendar.svg" width="21" height="22" alt="calendar"></button>
+          <p><label for="arrival-date-field">Дата заезда:</label>
+            <input type="text" id="arrival-date-field" name="arrival date" value="24 апреля 2017">
+            <button><img src="image/calendar.svg" width="21" height="22" alt="выбрать дату заезда"></button>
           </p>
-          <p><label for="departure-field">Дата выезда:</label>
-            <input type="text" id="departure-field" name="departure" value="4 июля 2017">
-            <button><img src="image/calendar.svg" width="21" height="22" alt="calendar"></button>
+          <p><label for="departure-date-field">Дата выезда:</label>
+            <input type="text" id="departure-date-field" name="departure date" value="4 июля 2017">
+            <button><img src="image/calendar.svg" width="21" height="22" alt="выбрать дату выезда"></button>
           </p>
-          <p><label for="adult-field">Взрослые:</label>
-            <button><img src="" width="12" height="3" alt="minus"></button> <!--css-->
-            <input type="text" id="adult-field" name="adult" value="2">
-            <button><img src="" width="11" height="11" alt="plus"></button> <!--css-->
-            <label for="child-field">Дети:</label>
-            <button><img src="" width="12" height="3" alt="minus"></button> <!--css-->
-            <input type="text" id="child-field" name="child" value="0">
-            <button><img src="" width="11" height="11" alt="plus"></button> <!--css-->
+          <p><label for="adult-number-field">Взрослые:</label>
+            <button><img src="" width="12" height="3" alt="уменьшить количество взрослых"></button> <!--css-->
+            <input type="text" id="adult-number-field" name="adult" value="2">
+            <button><img src="" width="11" height="11" alt="увеличить количество взрослых"></button> <!--css-->
+            <label for="child-number-field">Дети:</label>
+            <button><img src="" width="12" height="3" alt="уменьшить количество детей"></button> <!--css-->
+            <input type="text" id="child-number-field" name="child" value="0">
+            <button><img src="" width="11" height="11" alt="увеличить количество детей"></button> <!--css-->
           </p>
           <p><a class="search-link" href="inner.html">Найти</a></p>
   <!--для search-link потом в css сделаю background-color: #81b3d2 width="458" height="58"-->
         </form>
       <a class="map">
-        <img src="img/map.jpg" width="1200" height="593" alt="map">
+        <img src="img/map.jpg" width="1200" height="593" alt="карта Седоны">
       </a>
       </section>
       <footer class="main-footer">
@@ -125,7 +129,7 @@
         <div class="developer-name">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <span>Website by</span>
-            <img src="logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy logo">
+            <img src="logo-htmlacademy.svg" width="115" height="41" alt="логотип htmlacademy">
           </a>
         </div>
       </footer>
