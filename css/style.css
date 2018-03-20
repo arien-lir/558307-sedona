@@ -4,7 +4,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: bold;
+  font-weight: normal;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
@@ -14,19 +14,23 @@ a {
   text-decoration: none;
 }
 .main-navigation {
-  font-size: 14px;
   line-height: 26px;
+  font-weight: bold;
 }
-.advantages p {
+.advantages p,
+.tag,
+.hotel-search-title,
+.result h3,
+.hotel-name {
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
 }
-.advantages h3 {
-  font-size: 14px;
+.advantages h3,
+.developer-name {
   line-height: 26px;
-  font-weight: normal;
 }
-.advantage-blue{
+.advantage-blue {
   width: 400px;
   height: 256px;
   color: #ffffff;
@@ -37,26 +41,79 @@ a {
 }
 .advantages h2 {
   font-size: 21px;
-  line-height: 21px;
-}
-.advantage-description {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
+  font-weight: bold;
 }
 .call-to-action h3 {
   font-size: 30px;
   line-height: 36px;
+  font-weight: bold;
 }
 .call-to-action p {
-  font-size: 14px;
   line-height: 24px;
 }
 .hotel-search-title {
   width: 568px;
   height: 86px;
-  font-size: 21px;
-  line-height: 26px;
   color: #ffffff;
+  font-weight: bold;
   background-color: #766357;
+}
+.hotel-search-form {
+  width: 568px;
+  height: 395px;
+  font: inherit;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+.hotel-search-form input {
+  width: 346px;
+  height: 38px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+.search-link {
+  width: 458;
+  height: 58;
+  font-weight: bold;
+  background-color: #81b3d2;
+}
+.main-footer {
+  width: 1200;
+  height: 120;
+  background-color: #ffffff;
+}
+.index-footer {
+  opacity: 0.5;
+}
+.social-icon {
+  width: 46;
+  height: 48;
+  background-color: #81b3d2;
+}
+.search-form h2 {
+  font: inherit;
+  font-size: 16px;
+  font-weight: bold;
+}
+.sorting {
+  font-size: 12px;
+  line-height: 18px;
+}
+.button-details {
+  width: 110;
+  height: 27;
+  background-color: #81b3d2;
+  font-weight: bold;
+}
+.button-book {
+  width: 142;
+  height: 27;
+  background-color: #766357;
+  font-weight: bold;
+}
+.rating {
+  width: 110;
+  height: 27;
+  background-color: #f2f2f2;
 }
