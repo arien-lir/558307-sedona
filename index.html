@@ -45,28 +45,34 @@
             <img src="img/city-view.jpg" width="800" height="256" alt="вид на город">
           </div>
         </div>
-        <div class="advantage-white">
+        <div class="container-advantage-white">
+          <div class="advantage-white house">
   <!--для advantage-white потом в css сделаю background-color: white width="1200" height="330"-->
-          <img src="house.svg" width="75" height="72" alt="иконка жилье">
-          <h2>Жилье</h2>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <img src="img/house.svg" width="75" height="72" alt="иконка жилье">
+            <h2>Жилье</h2>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="advantage-white meal">
+            <img src="img/meal.svg" width="74" height="70" alt="иконка еда">
+            <h2>Еда</h2>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="advantage-white gift">
+            <img src="img/gift.svg" width="64" height="76" alt="иконка подарок">
+            <h2>Сувениры</h2>
+            <p>Не только китайского, но и местного производства!</p>
+          </div>
         </div>
-        <div class="advantage-white">
-          <img src="meal.svg" width="74" height="70" alt="иконка еда">
-          <h2>Еда</h2>
-          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </div>
-        <div class="advantage-white">
-          <img src="gift.svg" width="64" height="76" alt="иконка подарок">
-          <h2>Сувениры</h2>
-          <p>Не только китайского, но и местного производства!</p>
-        </div>
-        <div class="advantage-blue">
-          <img src="img/bridge.jpg" width="800" height="256" alt="мост">
-            <h2>Там есть<br>
-                Мост дьявола</h2>
-            <span>— №2 —</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <div class="container-bridge">
+          <div class="bridge-img">
+            <img src="img/bridge.jpg" width="800" height="256" alt="мост">
+          </div>
+          <div class="advantage-blue">
+              <h2>Там есть<br>
+                  Мост дьявола</h2>
+              <span>— №2 —</span>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
         </div>
         <div class="advantage-gray">
    <!--для advantage-gray потом в css сделаю background-color: #eeeeee width="1200" height="256"-->
@@ -97,20 +103,20 @@
         <form action="html://echo.htmlacademy.ru" method="get">
           <p><label for="arrival-date-field">Дата заезда:</label>
             <input type="text" id="arrival-date-field" name="arrival date" value="24 апреля 2017">
-            <button><img src="image/calendar.svg" width="21" height="22" alt="выбрать дату заезда"></button>
+            <button><img src="img/calendar.svg" width="21" height="22" alt="выбрать дату заезда"></button>
           </p>
           <p><label for="departure-date-field">Дата выезда:</label>
             <input type="text" id="departure-date-field" name="departure date" value="4 июля 2017">
-            <button><img src="image/calendar.svg" width="21" height="22" alt="выбрать дату выезда"></button>
+            <button><img src="img/calendar.svg" width="21" height="22" alt="выбрать дату выезда"></button>
           </p>
           <p><label for="adult-number-field">Взрослые:</label>
-            <button><img src="" width="12" height="3" alt="уменьшить количество взрослых"></button> <!--css-->
+            <button><img src="img/minus.jpg" width="12" height="3" alt="уменьшить количество взрослых"></button> <!--css-->
             <input type="text" id="adult-number-field" name="adult" value="2">
-            <button><img src="" width="11" height="11" alt="увеличить количество взрослых"></button> <!--css-->
+            <button><img src="img/plus.jpg" width="11" height="11" alt="увеличить количество взрослых"></button> <!--css-->
             <label for="child-number-field">Дети:</label>
-            <button><img src="" width="12" height="3" alt="уменьшить количество детей"></button> <!--css-->
+            <button><img src="img/minus.jpg" width="12" height="3" alt="уменьшить количество детей"></button> <!--css-->
             <input type="text" id="child-number-field" name="child" value="0">
-            <button><img src="" width="11" height="11" alt="увеличить количество детей"></button> <!--css-->
+            <button><img src="img/plus.jpg" width="11" height="11" alt="увеличить количество детей"></button> <!--css-->
           </p>
           <p><a class="search-link" href="inner.html">Найти</a></p>
   <!--для search-link потом в css сделаю background-color: #81b3d2 width="458" height="58"-->
