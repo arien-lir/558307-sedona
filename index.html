@@ -12,21 +12,21 @@
       <nav class="main-navigation">
   <!--для main-navigation потом в css сделаю background-color: white width="1200" height="56"-->
       <h1 class="visually-hidden">Главное меню</h1>
-       <a class="logo">
-         <img src="img/logo.png" width="138" height="70" alt="логотип сайта">
-       </a>
        <ul class="site-navigation">
          <li class="info-nav"><a href="#">Информация</a></li>
          <li class="photo-nav"><a href="#">Фото и видео</a></li>
+         <li class="logo"><a href="#"><img src="img/logo.png" width="138" height="70" alt="логотип сайта"></a></li>
          <li class="map-nav"><a href="#">Карта штата</a></li>
          <li class="hotel-nav"><a href="inner.html">Гостиницы</a></li>
-      </ul>
+       </ul>
       </nav>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Welcome to the gorgeous sedona</h1>
-      <section class="taglines">
-        <img src="img/sedona.jpg" width="1200" height="508" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
+      <section class="container-taglines">
+        <div class="taglines">
+          <img src="img/sedona.jpg" width="1200" height="508" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
+        </div>
       </section>
       <section class="advantages">
         <div class="advantages-header">
@@ -74,33 +74,36 @@
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
-        <div class="advantage-gray">
+        <div class="container-advantage-gray">
+          <div class="advantage-gray square">
    <!--для advantage-gray потом в css сделаю background-color: #eeeeee width="1200" height="256"-->
-          <h2>Небольшая площадь</h2>
-          <span>— №3 —</span>
-          <p>Все достопримечательности находятся очень близко</p>
-        </div>
-        <div class="advantage-gray">
-          <h2>Красивая дорога</h2>
-          <span>— №4 —</span>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-        <div class="advantage-gray">
-          <h2>Мало туристов</h2>
-          <span>— №5 —</span>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
+            <h2>Небольшая площадь</h2>
+            <span>— №3 —</span>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="advantage-gray road">
+            <h2>Красивая дорога</h2>
+            <span>— №4 —</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="advantage-gray tourists">
+            <h2>Мало туристов</h2>
+            <span>— №5 —</span>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </div>
       </section>
       <section class="call-to-action">
-  <!--для call-to-action потом в css сделаю background-color: white width="1200" height="291"-->
-        <h3>Заинтересовались?</h3>
-        <p>Укажите предполагаемые даты поездки,<br>
-           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="hotel-search-title" href="#">Поиск гостиницы в Седоне</a>
+        <div class="container-call-to-action">
+          <h3>Заинтересовались?</h3>
+          <p>Укажите предполагаемые даты поездки,<br>
+             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="hotel-search-title" href="#">Поиск гостиницы в Седоне</a>
+        </div>
   <!--для hotel-search-title потом в css сделаю background-color: #766357 width="568" height="86"-->
       </section>
-      <section class="hotel-search-form">
-        <form action="html://echo.htmlacademy.ru" method="get">
+      <section class="container-hotel-search-form">
+        <form class="hotel-search-form" action="html://echo.htmlacademy.ru" method="get">
           <p><label for="arrival-date-field">Дата заезда:</label>
             <input type="text" id="arrival-date-field" name="arrival date" value="24 апреля 2017">
             <button><img src="img/calendar.svg" width="21" height="22" alt="выбрать дату заезда"></button>
@@ -111,7 +114,7 @@
           </p>
           <p><label for="adult-number-field">Взрослые:</label>
             <button><img src="img/minus.jpg" width="12" height="3" alt="уменьшить количество взрослых"></button> <!--css-->
-            <input type="text" id="adult-number-field" name="adult" value="2">
+            <input class="adult" type="text" id="adult-number-field" name="adult" value="2">
             <button><img src="img/plus.jpg" width="11" height="11" alt="увеличить количество взрослых"></button> <!--css-->
             <label for="child-number-field">Дети:</label>
             <button><img src="img/minus.jpg" width="12" height="3" alt="уменьшить количество детей"></button> <!--css-->
@@ -127,22 +130,30 @@
       </section>
       <footer class="main-footer index-footer">
   <!--для main-footer потом в css сделаю background-color: white c opacity(?) width="1200" height="120"-->
-        <div class="tag">
-          <a href="#">#visitSEDONA</a>
-        </div>
-        <div class="footer-social">
-          <ul>
-            <li><a class="social-icon" href="#"><img src="twitter-icon.svg" width="17" height="15" alt="twitter"></a></li>
-            <li><a class="social-icon" href="#"><img src="fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
-            <li><a class="social-icon" href="#"><img src="youtube-icon.svg" width="20" height="16" alt="youtube"></a></li>
+        <div class="container-footer">
+          <div class="tag">
+            <a href="#">#visitSEDONA</a>
+          </div>
+          <div class="footer-social">
+            <ul>
+              <div class="container-twitter">
+                <li><a class="social-icon" href="#"><img src="img/twitter-icon.svg" width="17" height="15" alt="twitter"></a></li>
+              </div>
+              <div class="container-fb">
+                <li><a class="social-icon" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
+              </div>
+              <div class="youtube">
+                <li><a class="social-icon" href="#"><img src="img/youtube-icon.svg" width="20" height="16" alt="youtube"></a></li>
+              </div>
   <!--для social-icon потом в css сделаю background-color: #81b3d2 width="46" height="48"-->
-          </ul>
-        </div>
-        <div class="developer-name">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <span>Website by</span>
-            <img src="logo-htmlacademy.svg" width="115" height="41" alt="логотип htmlacademy">
-          </a>
+            </ul>
+          </div>
+          <div class="copyright">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <span>Website by</span>
+              <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="логотип htmlacademy">
+            </a>
+          </div>
         </div>
       </footer>
     </main>

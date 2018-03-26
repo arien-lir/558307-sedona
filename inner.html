@@ -12,15 +12,13 @@
       <nav class="main-navigation">
  <!--для main-navigation потом в css сделаю background-color: white width="1200" height="56"-->
       <h1 class="visually-hidden">Главное меню</h1>
-        <a class="logo" href="index.html">
-        <img src="img/logo.png" width="138" height="70" alt="логотип сайта">
-       </a>
-       <ul class="site-navigation">
-         <li><a href="#">Информация</a></li>
-         <li><a href="#">Фото и видео</a></li>
-         <li><a href="#">Карта штата</a></li>
-         <li class="site-navigation-current"><a>Гостиницы</a></li>
-      </ul>
+        <ul class="site-navigation">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li class="logo"><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="логотип сайта"></a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li class="site-navigation-current"><a>Гостиницы</a></li>
+        </ul>
       </nav>
     </header>
     <main class="container">
@@ -96,10 +94,10 @@
     <!--для button-book потом в css сделаю background-color: #766357 width="142" height="27"-->
             </div>
             <div class="rating">
-              <span class="stars-number"><img src="star.svg" width="18" height="17" alt="4 из 5 звезд"></span>
-              <span class="stars-number"><img src="star.svg" width="18" height="17" alt=""></span>
-              <span class="stars-number"><img src="star.svg" width="18" height="17" alt=""></span>
-              <span class="stars-number"><img src="star.svg" width="18" height="17" alt=""></span>
+              <span class="stars-number"><img src="img/star.svg" width="18" height="17" alt="4 из 5 звезд"></span>
+              <span class="stars-number"><img src="img/star.svg" width="18" height="17" alt=""></span>
+              <span class="stars-number"><img src="img/star.svg" width="18" height="17" alt=""></span>
+              <span class="stars-number"><img src="img/star.svg" width="18" height="17" alt=""></span>
               <span class="rating">Рейтинг: 8,5</span>
     <!--для rating потом в css сделаю background-color: #f2f2f2 width="110" height="27"-->
             </div>
@@ -116,9 +114,9 @@
               <a class="button-book" href="#">Забронировать</a>
             </div>
             <div class="rating">
-              <span class="stars-number"><img src="star.svg" width="18" height="17" alt="3 из 5 звезд"></span>
-              <span class="stars-number"><img src="star.svg" width="18" height="17" alt=""></span>
-              <span class="stars-number"><img src="star.svg" width="18" height="17" alt=""></span>
+              <span class="stars-number"><img src="img/star.svg" width="18" height="17" alt="3 из 5 звезд"></span>
+              <span class="stars-number"><img src="img/star.svg" width="18" height="17" alt=""></span>
+              <span class="stars-number"><img src="img/star.svg" width="18" height="17" alt=""></span>
               <span class="rating">Рейтинг: 8,9</span>
             </div>
           </article>
@@ -134,30 +132,38 @@
               <span><a class="button-book" href="#">Забронировать</a></span>
             </div>
             <div class="rating">
-              <span class="stars-number"><img src="star.svg" width="18" height="17" alt="2 из 5 звезд"></span>
-              <span class="stars-number"><img src="star.svg" width="18" height="17" alt=""></span>
+              <span class="stars-number"><img src="img/star.svg" width="18" height="17" alt="2 из 5 звезд"></span>
+              <span class="stars-number"><img src="img/star.svg" width="18" height="17" alt=""></span>
               <span class="rating">Рейтинг: 9,2</span>
             </div>
           </article>
       </section>
       <footer class="main-footer" >
+        <div class="container-footer">
  <!--для main-footer потом в css сделаю background-color: white c opacity(?) width="1200" height="120"-->
-        <div class="tag">
-          <a href="#">#visitSEDONA</a>
-        </div>
-        <div class="footer-social ">
-          <ul>
-            <li><a class="social-icon" href="#"><img src="twitter-icon.svg" width="17" height="15" alt="twitter"></a></li>
-            <li><a class="social-icon" href="#"><img src="fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
-            <li><a class="social-icon" href="#"><img src="youtube-icon.svg" width="20" height="16" alt="youtube"></a></li>
+          <div class="tag">
+            <a href="#">#visitSEDONA</a>
+          </div>
+          <div class="footer-social ">
+            <ul>
+              <div class="container-twitter">
+                <li><a class="social-icon" href="#"><img src="img/twitter-icon.svg" width="17" height="15" alt="twitter"></a></li>
+              </div>
+              <div class="container-fb">
+                <li><a class="social-icon" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
+              </div>
+              <div class="youtube">
+                <li><a class="social-icon" href="#"><img src="img/youtube-icon.svg" width="20" height="16" alt="youtube"></a></li>
+              </div>
   <!--для social-icon потом в css сделаю background-color: #81b3d2 width="46" height="48"-->
-          </ul>
-        </div>
-        <div class="developer-name">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <span>Website by</span>
-            <img src="logo-htmlacademy.svg" width="115" height="41" alt="логотип htmlacademy">
-          </a>
+            </ul>
+          </div>
+          <div class="copyright">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <span>Website by</span>
+              <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="логотип htmlacademy">
+            </a>
+          </div>
         </div>
       </footer>
     </main>
