@@ -106,20 +106,25 @@
         <form class="hotel-search-form" action="html://echo.htmlacademy.ru" method="get">
           <p><label for="arrival-date-field">Дата заезда:</label>
             <input type="text" id="arrival-date-field" name="arrival date" value="24 апреля 2017">
-            <button><img src="img/calendar.svg" width="21" height="22" alt="выбрать дату заезда"></button>
+            <button class="calendar"><img src="img/calendar.svg" width="21" height="22" alt="выбрать дату заезда"></button>
           </p>
           <p><label for="departure-date-field">Дата выезда:</label>
             <input type="text" id="departure-date-field" name="departure date" value="4 июля 2017">
-            <button><img src="img/calendar.svg" width="21" height="22" alt="выбрать дату выезда"></button>
+            <button class="calendar"><img src="img/calendar.svg" width="21" height="22" alt="выбрать дату выезда"></button>
           </p>
-          <p><label for="adult-number-field">Взрослые:</label>
-            <button><img src="img/minus.jpg" width="12" height="3" alt="уменьшить количество взрослых"></button> <!--css-->
-            <input class="adult" type="text" id="adult-number-field" name="adult" value="2">
-            <button><img src="img/plus.jpg" width="11" height="11" alt="увеличить количество взрослых"></button> <!--css-->
+          <p>
+          <span class="container-adult">
+            <label class="adult" for="adult-number-field">Взрослые:</label>
+            <button class="minus"><img src="img/minus.png" width="12" height="3" alt="уменьшить количество взрослых"></button> <!--css-->
+            <input type="text" id="adult-number-field" name="adult" value="2">
+            <button class="plus"><img src="img/plus.png" width="11" height="11" alt="увеличить количество взрослых"></button> <!--css-->
+          </span>
+          <span class="container-child">
             <label for="child-number-field">Дети:</label>
-            <button><img src="img/minus.jpg" width="12" height="3" alt="уменьшить количество детей"></button> <!--css-->
+            <button class="minus"><img src="img/minus.png" width="12" height="3" alt="уменьшить количество детей"></button> <!--css-->
             <input type="text" id="child-number-field" name="child" value="0">
-            <button><img src="img/plus.jpg" width="11" height="11" alt="увеличить количество детей"></button> <!--css-->
+            <button class="plus"><img src="img/plus.png" width="11" height="11" alt="увеличить количество детей"></button> <!--css-->
+          </span>
           </p>
           <p><a class="search-link" href="inner.html">Найти</a></p>
   <!--для search-link потом в css сделаю background-color: #81b3d2 width="458" height="58"-->
@@ -136,15 +141,9 @@
           </div>
           <div class="footer-social">
             <ul>
-              <div class="container-twitter">
-                <li><a class="social-icon" href="#"><img src="img/twitter-icon.svg" width="17" height="15" alt="twitter"></a></li>
-              </div>
-              <div class="container-fb">
-                <li><a class="social-icon" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
-              </div>
-              <div class="youtube">
-                <li><a class="social-icon" href="#"><img src="img/youtube-icon.svg" width="20" height="16" alt="youtube"></a></li>
-              </div>
+              <li class="twitter"><a class="social-icon" href="#"><img src="img/twitter-icon.svg" width="17" height="15" alt="twitter"></a></li>
+              <li class="fb"><a class="social-icon" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
+              <li class="youtube"><a class="social-icon" href="#"><img src="img/youtube-icon.svg" width="20" height="16" alt="youtube"></a></li>
   <!--для social-icon потом в css сделаю background-color: #81b3d2 width="46" height="48"-->
             </ul>
           </div>

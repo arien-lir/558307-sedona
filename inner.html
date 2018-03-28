@@ -13,11 +13,11 @@
  <!--для main-navigation потом в css сделаю background-color: white width="1200" height="56"-->
       <h1 class="visually-hidden">Главное меню</h1>
         <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
+          <li class="info-nav"><a href="#">Информация</a></li>
+          <li class="photo-nav"><a href="#">Фото и видео</a></li>
           <li class="logo"><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="логотип сайта"></a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li class="site-navigation-current"><a>Гостиницы</a></li>
+          <li class="map-nav"><a href="#">Карта штата</a></li>
+          <li class="site-navigation-current hotel-nav"><a href="inner.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -26,7 +26,7 @@
         <h1 class="visually-hidden">Подбор жилья</h1>
         <img src="img/search-form-cover.png" width="1200" height="217" alt="фон формы поиска">
         <!--неконтентное изображение, делать в css?-->
-        <form action="html://echo.htmlacademy.ru" method="get">
+        <form class="container-search-form" action="html://echo.htmlacademy.ru" method="get">
           <h2>Инфраструктура:</h2>
             <input class="visually-hidden" type="checkbox" id="pool-mark" name="pool" checked>
             <img src="img/checkbox-on.svg" width="27" height="23" alt="отмечено">
@@ -47,17 +47,21 @@
             <input class="visually-hidden" type="checkbox" id="apartments-mark" name="apartments" checked>
             <img src="img/checkbox-on.svg" width="27" height="23" alt="отмечено">
             <label for="apartments-mark">Апартаменты</label>
-          <h2>Стоимость в сутки (р):</h2>
+          <div class="filter-range">
+            <h2 class="filter-range-title">Стоимость в сутки (р):</h2>
             <div class="price-range">
-              <span>От 0</span>
-              <span></span> <!--разделитель-->
-              <span>До 3000</span>
+             <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+             <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
             </div>
-            <label class="visually-hidden" for="range-line">Задаем верхнюю и нижнюю границы цен</label>
-            <input class="visually-hidden" type="range" id="range-line" name="range-line">
-            <img src="img/filter-button.svg" width="20" height="23" alt="иконка нижней границы">
-            <img src="img/filter-button.svg" width="20" height="23" alt="иконка верхней границы">
-            <button type="submit" class="range-button">Показать</button>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
         </form>
       </section>
       <section class="result-form">
@@ -146,15 +150,9 @@
           </div>
           <div class="footer-social ">
             <ul>
-              <div class="container-twitter">
-                <li><a class="social-icon" href="#"><img src="img/twitter-icon.svg" width="17" height="15" alt="twitter"></a></li>
-              </div>
-              <div class="container-fb">
-                <li><a class="social-icon" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
-              </div>
-              <div class="youtube">
-                <li><a class="social-icon" href="#"><img src="img/youtube-icon.svg" width="20" height="16" alt="youtube"></a></li>
-              </div>
+                <li class="twitter"><a class="social-icon" href="#"><img src="img/twitter-icon.svg" width="17" height="15" alt="twitter"></a></li>
+                <li class="fb"><a class="social-icon" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
+                <li class="youtube"><a class="social-icon" href="#"><img src="img/youtube-icon.svg" width="20" height="16" alt="youtube"></a></li>
   <!--для social-icon потом в css сделаю background-color: #81b3d2 width="46" height="48"-->
             </ul>
           </div>
