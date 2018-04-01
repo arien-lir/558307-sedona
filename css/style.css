@@ -149,7 +149,6 @@ input[type="checkbox"].visually-hidden {
 .site-navigation a:visited {
   color: #000000;
 }
-a.active,
 .site-navigation a.active:link,
 .site-navigation a.active:visited {
   color: #766357;
@@ -216,6 +215,115 @@ a.hotel-search-title:hover,
 a.hotel-search-title:focus {
   color: #ffffff;
   background-color: #604e43;
+}
+a.search-link:link,
+a.search-link:visited {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+a.search-link:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+a.search-link:hover,
+a.search-link:focus {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+/* не работает */
+a.social-icon:link,
+a.social-icon:visited {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+a.social-icon:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+a.social-icon:hover,
+a.social-icon:focus {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+/* не работает */
+
+.sorting a:link,
+.sorting a:visited {
+  color: #b2b2b2;
+  border-bottom: 1px dotted #81b3d2;
+}
+.sorting a:active {
+  color: #ffffff;
+}
+.sorting a:hover,
+.sorting a:focus {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+.sorting a.active:link,
+.sorting a.active:visited {
+  color: #81b3d2;
+  border-bottom: none;
+}
+.up a {
+  display: block;
+  width: 11px;
+  height: 10px;
+  margin-top: 5px;
+  background: url("../img/icon-up-dir-static.png");
+}
+.up a:link,
+.up a:visited {
+  background: url("../img/icon-up-dir-static.png");
+}
+.up a:active {
+  background: url("../img/icon-up-dir-click.png");
+}
+.up a:hover,
+.up a:focus {
+  background: url("../img/icon-up-dir.png");
+}
+.down a {
+  display: block;
+  width: 11px;
+  height: 10px;
+  margin-top: 5px;
+  background: url("../img/icon-down-dir-static.png");
+}
+.down a:link,
+.down a:visited {
+  background: url("../img/icon-down-dir-static.png");
+}
+.down a:active {
+  background: url("../img/icon-down-dir-click.png");
+}
+.down a:hover,
+.down a:focus {
+  background: url("../img/icon-down-dir.png");
+}
+.down a.active:link,
+.down a.active:visited {
+  background: url("../img/icon-down-dir-click.png");
+}
+
+.copyright a {
+  display: block;
+  width: 115px;
+  height: 41px;
+  margin-top: 5px;
+  background: url("../img/logo-htmlacademy.png");
+}
+.copyright a:link,
+.copyright a:visited {
+  background: url("../img/logo-htmlacademy.png");
+}
+.copyright a:active {
+  background: url("../img/logo-htmlacademy-active.png");
+}
+.copyright a:hover,
+.copyright a:focus {
+  background: url("../img/logo-htmlacademy-hover.png");
 }
 
 html {
@@ -736,13 +844,13 @@ html {
   padding-right: 101px;
 }
 .copyright span {
+  margin-top: 15px;
   margin-right: 8px;
 }
 .copyright a {
   display: flex;
   align-items: center;
 }
-
 .search-form {
   display: flex;
   justify-content: center;
@@ -819,7 +927,6 @@ html {
   padding: 0;
   margin: 0;
   padding-bottom: 21px;
-
 }
 .hotels {
   display: flex;
