@@ -252,12 +252,17 @@ a.search-link:active {
 }
 
 .twitter a {
+  background-color: #81b3d2;
+  background: url("../img/twitter-icon.svg");
+}
+
+.twitter span {
   display: block;
   vertical-align: middle;
   text-align: center;
   width: 17px;
   height: 15px;
-  background: url("../img/twitter-icon.svg");
+  background-repeat: no-repeat;
 }
 
 .twitter a:link, .twitter a:visited {
@@ -275,6 +280,33 @@ a.search-link:active {
 .twitter a:active {
   background: url("../img/twitter-icon-active.svg");
   background-color: #5496bd;
+  background-repeat: no-repeat;
+}
+
+button.plus {
+  background: url("../img/plus.png");
+}
+
+.plus span {
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-repeat: no-repeat;
+}
+
+button.plus:link, button.plus:visited {
+  background: url("../img/plus.png");
+  background-repeat: no-repeat;
+}
+
+button.plus:hover, button.plus:focus {
+  outline: none;
+  background: url("../img/plus-hover.png");
+  background-repeat: no-repeat;
+}
+
+button.plus:active {
+  background: url("../img/plus-active.png");
   background-repeat: no-repeat;
 }
 
@@ -528,6 +560,8 @@ a.search-link:active {
   margin: 0 auto;
   padding: 0;
   position: absolute;
+  width: 1200px;
+  height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -627,12 +661,22 @@ a.search-link:active {
 }
 
 .bridge-img {
-  display: block;
+  position: relative;
+  overflow: hidden;
   width: 800px;
-  height: 256px;
+  background-color: #81b3d2;
+}
+
+.bridge-img img {
+  display: block;
+  width: 1200px;
+  height: 100%;
   margin: 0 auto;
   padding: 0;
-  background-color: #81b3d2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container-bridge h2 {
@@ -817,7 +861,6 @@ a.search-link:active {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 52px;
 }
 
 .hotel-search-form input {
@@ -855,7 +898,7 @@ a.search-link:active {
   cursor: pointer;
 }
 
-.plus {
+.plus span {
   position: absolute;
   right: 7px;
   top: 13px;
@@ -895,6 +938,7 @@ a.search-link:active {
   background-color: #81b3d2;
   padding-top: 17px;
   padding-bottom: 15px;
+  margin-top: 52px;
 }
 
 .main-footer {
@@ -960,7 +1004,10 @@ a.search-link:active {
 }
 
 .twitter span {
-  margin-top: 17px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .fb span {
@@ -995,7 +1042,11 @@ a.search-link:active {
   padding: 0;
   background-color: #81b3d2;
   background-image: url("..img/search-form-cover.jpg");
+  position: relative;
+  overflow: hidden;
 }
+
+img.cover {}
 
 .container-search-form {
   display: flex;
