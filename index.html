@@ -104,31 +104,32 @@
         <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="get">
           <p><label for="arrival-date-field">Дата заезда:</label>
             <input type="text" id="arrival-date-field" name="arrival date" value="24 апреля 2017">
-            <button class="calendar"><img src="img/calendar.svg" width="21" height="22" alt="выбрать дату заезда"></button>
+            <button class="calendar"><span class="visually-hidden">Выбрать дату заезда</span></button>
           </p>
           <p><label for="departure-date-field">Дата выезда:</label>
             <input type="text" id="departure-date-field" name="departure date" value="4 июля 2017">
-            <button class="calendar"><img src="img/calendar.svg" width="21" height="22" alt="выбрать дату выезда"></button>
+            <button class="calendar"><span class="visually-hidden">Выбрать дату выезда</span></button>
           </p>
           <p>
             <span class="container-adult">
             <label class="adult" for="adult-number-field">Взрослые:</label>
-            <button class="minus"><img src="img/minus.png" width="12" height="3" alt="уменьшить количество взрослых"></button>
+            <button class="minus"><span class="visually-hidden">Уменьшить количество взрослых</span></button>
             <input type="text" id="adult-number-field" name="adult" value="2">
             <button class="plus"><span class="visually-hidden">Увеличить количество взрослых</span></button>
             </span>
             <span class="container-child">
             <label for="child-number-field">Дети:</label>
-            <button class="minus"><img src="img/minus.png" width="12" height="3" alt="уменьшить количество детей"></button>
+            <button class="minus"><span class="visually-hidden">Уменьшить количество детей</span></button>
             <input type="text" id="child-number-field" name="child" value="0">
             <button class="plus"><span class="visually-hidden">Увеличить количество детей</span></button>
             </span>
           </p>
           <p><a class="search-link" href="#">Найти</a></p>
         </form>
-        <a class="map" href="#">
-          <img src="img/map.jpg" width="1200" height="593" alt="карта Седоны">
-        </a>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d437556.2660392638!2d-111.66392946251113!3d34.85510500354368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1523045710321"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </section>
       <footer class="main-footer index-footer">
         <div class="container-footer">
@@ -145,13 +146,11 @@
               <li class="fb">
                 <a class="social-icon" href="#">
                   <span class="visually-hidden">Facebook</span>
-                  <img src="img/fb-icon.svg" width="12" height="22" alt="facebook">
                 </a>
               </li>
               <li class="youtube">
                 <a class="social-icon" href="#">
                   <span class="visually-hidden">Youtube</span>
-                  <img src="img/youtube-icon.svg" width="20" height="16" alt="youtube">
                 </a>
               </li>
             </ul>
