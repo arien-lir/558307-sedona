@@ -1,8 +1,10 @@
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *::before, *::after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -14,6 +16,7 @@ html, body {
 .container-body {
   width: 1200px;
   margin: auto;
+  -webkit-box-shadow: 0 0 15px 5px #e1e1e1;
   box-shadow: 0 0 15px 5px #e1e1e1;
 }
 
@@ -151,6 +154,7 @@ a {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -364,12 +368,14 @@ a.search-link:active {
   display: block;
   width: 21px;
   height: 22px;
-  background-repeat: no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 button.calendar:link, button.calendar:visited {
   background: url("../img/calendar.png");
-  background-repeat: no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 button.calendar:hover, button.calendar:focus {
@@ -379,19 +385,22 @@ button.calendar:hover, button.calendar:focus {
 
 button.calendar:active {
   background: url("../img/calendar-active.png");
-  background-repeat: no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .plus span {
   display: block;
   width: 11px;
   height: 11px;
-  background-repeat: no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 button.plus:link, button.plus:visited {
   background: url("../img/plus.png");
-  background-repeat: no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 button.plus:hover, button.plus:focus {
@@ -401,19 +410,22 @@ button.plus:hover, button.plus:focus {
 
 button.plus:active {
   background: url("../img/plus-active.png");
-  background-repeat: no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .minus span {
   display: block;
   width: 12px;
   height: 3px;
-  background-repeat: no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 button.minus:link, button.minus:visited {
   background: url("../img/minus.png");
-  background-repeat: no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 button.minus:hover, button.minus:focus {
@@ -423,7 +435,8 @@ button.minus:hover, button.minus:focus {
 
 button.minus:active {
   background: url("../img/minus-active.png");
-  background-repeat: no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container-search-form input[type="checkbox"] {
@@ -431,6 +444,17 @@ button.minus:active {
   z-index: 2;
   border: 0;
   background: none;
+}
+
+:before {
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.container-search-form label {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .container-search-form span {
@@ -600,8 +624,13 @@ button.btn-transparent:hover {
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 1200px;
   margin: 0 auto;
@@ -617,6 +646,7 @@ button.btn-transparent:hover {
   width: 240px;
   position: absolute;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 2;
 }
@@ -671,8 +701,13 @@ button.btn-transparent:hover {
 }
 
 .taglines {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
   padding: 0;
@@ -683,9 +718,17 @@ button.btn-transparent:hover {
 }
 
 .advantages-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 1200px;
   margin: 0 auto;
@@ -705,7 +748,11 @@ button.btn-transparent:hover {
 }
 
 .container-lifestyle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 1200px;
   margin: 0 auto;
@@ -752,13 +799,20 @@ button.btn-transparent:hover {
   height: 100%;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .container-advantage-white {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   width: 1200px;
   margin: 0 auto;
@@ -839,8 +893,13 @@ button.btn-transparent:hover {
 }
 
 .container-bridge {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 1200px;
   margin: 0 auto;
@@ -864,6 +923,7 @@ button.btn-transparent:hover {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -885,8 +945,13 @@ button.btn-transparent:hover {
 }
 
 .container-advantage-gray {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 1200px;
   margin: 0 auto;
@@ -952,10 +1017,20 @@ button.btn-transparent:hover {
 }
 
 .call-to-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 1200px;
   margin: 0 auto;
@@ -990,10 +1065,20 @@ button.btn-transparent:hover {
 }
 
 .container-hotel-search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 1200px;
   margin: 0 auto;
@@ -1031,9 +1116,16 @@ button.btn-transparent:hover {
 }
 
 .hotel-search-form p {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -1053,7 +1145,10 @@ button.btn-transparent:hover {
 }
 
 .hotel-search-form p:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -1114,18 +1209,32 @@ button.btn-transparent:hover {
 }
 
 .container-adult {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 226px;
   position: relative;
 }
 
 .container-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 179px;
   position: relative;
@@ -1155,8 +1264,13 @@ button.btn-transparent:hover {
 }
 
 .container-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 1200px;
   margin: 0 auto;
@@ -1174,10 +1288,19 @@ button.btn-transparent:hover {
 }
 
 .footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   width: 400px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -1204,11 +1327,21 @@ button.btn-transparent:hover {
 }
 
 .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 400px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0;
 }
@@ -1218,9 +1351,16 @@ button.btn-transparent:hover {
 }
 
 .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 1200px;
   margin: 0 auto;
@@ -1232,9 +1372,17 @@ button.btn-transparent:hover {
 }
 
 .container-search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0 auto;
   padding: 0;
@@ -1242,8 +1390,14 @@ button.btn-transparent:hover {
 }
 
 .infrastructure {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 327px;
   padding-left: 72px;
@@ -1260,27 +1414,53 @@ button.btn-transparent:hover {
 }
 
 .pool {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
 .parking {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
 .wifi {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
 .infrastructure label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -1288,8 +1468,14 @@ button.btn-transparent:hover {
 }
 
 .housing {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 485px;
   padding-left: 0;
@@ -1305,27 +1491,53 @@ button.btn-transparent:hover {
 }
 
 .hotels {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
 .motels {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
 .apartments {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
 .housing label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -1333,8 +1545,14 @@ button.btn-transparent:hover {
 }
 
 .filter-range {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 318px;
   margin: 0;
@@ -1370,6 +1588,7 @@ button.btn-transparent:hover {
   width: 2px;
   height: 22px;
   background: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -1421,6 +1640,7 @@ button.btn-transparent:hover {
   background: #ababab;
   border: 10px solid #ffffff;
   border-radius: 50%;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
@@ -1449,8 +1669,13 @@ button.btn-transparent:hover {
 }
 
 .result-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   width: 1200px;
   margin: 0 auto;
@@ -1469,8 +1694,13 @@ button.btn-transparent:hover {
 }
 
 .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   width: 857px;
   margin: 0;
@@ -1491,7 +1721,10 @@ button.btn-transparent:hover {
 }
 
 .sorting ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 700px;
   margin: 0;
@@ -1505,8 +1738,13 @@ button.btn-transparent:hover {
 }
 
 .up-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   width: 107px;
   margin: 0;
@@ -1515,7 +1753,10 @@ button.btn-transparent:hover {
 }
 
 .up-down ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -1528,8 +1769,13 @@ button.btn-transparent:hover {
 }
 
 .amara {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   width: 1200px;
   margin: 0 auto;
@@ -1548,10 +1794,20 @@ button.btn-transparent:hover {
 }
 
 .container-amara {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   width: 780px;
   margin: 0;
@@ -1589,9 +1845,17 @@ button.btn-transparent:hover {
 }
 
 .container-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   width: 111px;
   margin: 0;
@@ -1620,8 +1884,13 @@ button.btn-transparent:hover {
 }
 
 .desert {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   width: 1200px;
   margin: 0 auto;
@@ -1633,10 +1902,20 @@ button.btn-transparent:hover {
 }
 
 .container-desert {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   width: 780px;
   margin: 0;
@@ -1659,8 +1938,13 @@ button.btn-transparent:hover {
 }
 
 .villas {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   width: 1200px;
   margin: 0 auto;
@@ -1673,10 +1957,20 @@ button.btn-transparent:hover {
 }
 
 .container-villas {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   width: 780px;
   margin: 0;
