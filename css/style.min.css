@@ -978,7 +978,7 @@ button.btn-transparent:hover {
 
 .map iframe {
   width: 1200px;
-  height: 593px;
+  height: 586px;
   background-color: #cbdda9
 }
 
@@ -1120,7 +1120,7 @@ button.btn-transparent:hover {
   width: 400px;
   vertical-align: middle;
   text-align: center;
-  margin: 48px 0
+  margin: 45px 0 48px
 }
 
 .footer-social ul, .housing label, .infrastructure label {
