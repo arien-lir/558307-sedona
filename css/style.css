@@ -428,14 +428,9 @@ button.minus:active {
 
 .container-search-form input[type="checkbox"] {
   position: absolute;
-  z-index: 4;
+  z-index: 2;
   border: 0;
   background: none;
-  background-position: center;
-  right: 228px;
-  width: 23px;
-  height: 23px;
-  cursor: pointer;
 }
 
 .container-search-form span {
@@ -446,32 +441,48 @@ button.minus:active {
   background-position: center;
 }
 
-input[type="checkbox"]+label:before {
+.container-search-form input[type="checkbox"]~label:before {
+  display: block;
+  width: 23px;
+  height: 23px;
   content: "";
   background: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
-input[type="checkbox"]:checked+label:before {
+.container-search-form input[type="checkbox"]:checked~label:before {
+  display: block;
+  width: 27px;
+  height: 23px;
   content: "";
   background: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
-input[type="checkbox"]:disabled+label:before {
+.container-search-form input[type="checkbox"]:disabled~label:before {
+  display: block;
+  width: 23px;
+  height: 23px;
   content: "";
   background: url("../img/checkbox-off-block.svg");
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
-input[type="checkbox"]:checked:disabled+label:before {
+.container-search-form input[type="checkbox"]:checked:disabled~label:before {
+  display: block;
+  width: 27px;
+  height: 23px;
   content: "";
   background: url("../img/checkbox-on-block.svg");
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .sorting a:link, .sorting a:visited {
@@ -574,6 +585,18 @@ input[type="checkbox"]:checked:disabled+label:before {
   color: #000000;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+}
+
+button.btn-transparent:link, button.btn-transparent:visited {
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+button.btn-transparent:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .site-navigation {
@@ -1224,7 +1247,8 @@ input[type="checkbox"]:checked:disabled+label:before {
   flex-direction: column;
   width: 327px;
   padding-left: 72px;
-  padding-top: 21px;
+  padding-top: 27px;
+  padding-bottom: 10px;
 }
 
 .infrastructure h2 {
@@ -1232,7 +1256,7 @@ input[type="checkbox"]:checked:disabled+label:before {
   text-align: left;
   padding: 0;
   margin: 0;
-  padding-bottom: 21px;
+  padding-bottom: 25px;
 }
 
 .pool {
@@ -1256,23 +1280,11 @@ input[type="checkbox"]:checked:disabled+label:before {
   justify-content: flex-start;
 }
 
-.infrastructure input {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-}
-
 .infrastructure label {
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
+  display: flex;
   margin: 0;
   padding: 0;
-  margin-bottom: 26px;
-  margin-left: 12px;
+  margin-bottom: 22px;
 }
 
 .housing {
@@ -1281,7 +1293,7 @@ input[type="checkbox"]:checked:disabled+label:before {
   flex-direction: column;
   width: 485px;
   padding-left: 0;
-  padding-top: 21px;
+  padding-top: 19px;
 }
 
 .housing h2 {
@@ -1289,7 +1301,7 @@ input[type="checkbox"]:checked:disabled+label:before {
   text-align: left;
   padding: 0;
   margin: 0;
-  padding-bottom: 21px;
+  padding-bottom: 25px;
 }
 
 .hotels {
@@ -1313,23 +1325,11 @@ input[type="checkbox"]:checked:disabled+label:before {
   justify-content: flex-start;
 }
 
-.housing input {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-}
-
 .housing label {
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
+  display: flex;
   margin: 0;
   padding: 0;
-  margin-bottom: 26px;
-  margin-left: 15px;
+  margin-bottom: 22px;
 }
 
 .filter-range {
