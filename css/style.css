@@ -462,7 +462,7 @@ button.minus:active {
   width: 23px;
   height: 23px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
 }
 
 .container-search-form input[type="checkbox"]~label::before {
@@ -472,7 +472,7 @@ button.minus:active {
   content: "";
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   cursor: pointer;
 }
 
@@ -483,7 +483,7 @@ button.minus:active {
   content: "";
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   cursor: pointer;
 }
 
@@ -494,7 +494,7 @@ button.minus:active {
   content: "";
   background-image: url("../img/checkbox-off-block.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   cursor: pointer;
 }
 
@@ -505,7 +505,7 @@ button.minus:active {
   content: "";
   background-image: url("../img/checkbox-on-block.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   cursor: pointer;
 }
 
