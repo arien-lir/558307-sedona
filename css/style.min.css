@@ -428,16 +428,16 @@ button.minus:active {
   background: 0 0
 }
 
-:before {
+::before {
   margin-right: 15px
 }
 
-.container-search-form label, :before {
+.container-search-form label, ::before {
   display: inline-block;
   vertical-align: middle
 }
 
-.container-search-form input[type=checkbox]~label:before, .container-search-form span {
+.container-search-form input[type=checkbox]~label::before, .container-search-form span {
   display: block;
   width: 23px;
   height: 23px;
@@ -445,13 +445,14 @@ button.minus:active {
   background-position: center
 }
 
-.container-search-form input[type=checkbox]~label:before {
+.container-search-form input[type=checkbox]~label::before {
+  width: 27px;
   content: "";
   background: url(../img/checkbox-off.svg);
   cursor: pointer
 }
 
-.container-search-form input[type=checkbox]:checked~label:before {
+.container-search-form input[type=checkbox]:checked~label::before {
   display: block;
   width: 27px;
   height: 23px;
@@ -462,9 +463,9 @@ button.minus:active {
   cursor: pointer
 }
 
-.container-search-form input[type=checkbox]:disabled~label:before {
+.container-search-form input[type=checkbox]:disabled~label::before {
   display: block;
-  width: 23px;
+  width: 27px;
   height: 23px;
   content: "";
   background: url(../img/checkbox-off-block.svg);
@@ -473,7 +474,7 @@ button.minus:active {
   cursor: pointer
 }
 
-.container-search-form input[type=checkbox]:checked:disabled~label:before {
+.container-search-form input[type=checkbox]:checked:disabled~label::before {
   display: block;
   width: 27px;
   height: 23px;
