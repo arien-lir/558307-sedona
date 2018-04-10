@@ -1105,6 +1105,7 @@ button.btn-transparent:hover {
 .map iframe {
   width: 1200px;
   height: 586px;
+  border: none;
   background-color: #cbdda9;
 }
 
