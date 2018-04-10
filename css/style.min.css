@@ -265,7 +265,7 @@ a.search-link:active {
 
 .twitter a, .twitter a:link, .twitter a:visited {
   background-color: #81b3d2;
-  background: url(../img/twitter-icon.svg)
+  background-image: url(../img/twitter-icon.svg)
 }
 
 .fb span, .twitter span, .youtube span {
@@ -283,14 +283,14 @@ a.search-link:active {
 }
 
 .twitter a:focus, .twitter a:hover {
-  background: url(../img/twitter-icon.svg);
+  background-image: url(../img/twitter-icon.svg);
   background-color: #669ec0;
   background-repeat: no-repeat;
   background-position: center
 }
 
 .twitter a:active {
-  background: url(../img/twitter-icon.svg);
+  background-image: url(../img/twitter-icon.svg);
   opacity: .5;
   background-color: #5496bd;
   background-repeat: no-repeat;
@@ -299,7 +299,7 @@ a.search-link:active {
 
 .fb a, .fb a:link, .fb a:visited {
   background-color: #81b3d2;
-  background: url(../img/fb-icon.svg)
+  background-image: url(../img/fb-icon.svg)
 }
 
 .fb a:link, .fb a:visited {
@@ -308,14 +308,14 @@ a.search-link:active {
 }
 
 .fb a:focus, .fb a:hover {
-  background: url(../img/fb-icon.svg);
+  background-image: url(../img/fb-icon.svg);
   background-color: #669ec0;
   background-repeat: no-repeat;
   background-position: center
 }
 
 .fb a:active {
-  background: url(../img/fb-icon.svg);
+  background-image: url(../img/fb-icon.svg);
   opacity: .5;
   background-color: #5496bd;
   background-repeat: no-repeat;
@@ -324,7 +324,7 @@ a.search-link:active {
 
 .youtube a, .youtube a:link, .youtube a:visited {
   background-color: #81b3d2;
-  background: url(../img/youtube-icon.svg)
+  background-image: url(../img/youtube-icon.svg)
 }
 
 .youtube a:link, .youtube a:visited {
@@ -333,7 +333,7 @@ a.search-link:active {
 }
 
 .youtube a:focus, .youtube a:hover {
-  background: url(../img/youtube-icon.svg);
+  background-image: url(../img/youtube-icon.svg);
   background-color: #669ec0;
   background-repeat: no-repeat;
   background-position: center
@@ -345,7 +345,7 @@ a.search-link:active {
 }
 
 .youtube a:active {
-  background: url(../img/youtube-icon.svg);
+  background-image: url(../img/youtube-icon.svg);
   opacity: .5;
   background-color: #5496bd
 }
@@ -357,7 +357,7 @@ a.search-link:active {
 }
 
 button.calendar:link, button.calendar:visited {
-  background: url(../img/calendar.png);
+  background-image: url(../img/calendar.png);
   background-repeat: no-repeat;
   background-position: center
 }
@@ -368,7 +368,7 @@ button.calendar:focus, button.calendar:hover {
 }
 
 button.calendar:active {
-  background: url(../img/calendar-active.png)
+  background-image: url(../img/calendar-active.png)
 }
 
 .plus span, button.calendar:active, button.plus:link, button.plus:visited {
@@ -383,7 +383,7 @@ button.calendar:active {
 }
 
 button.plus:link, button.plus:visited {
-  background: url(../img/plus.png)
+  background-image: url(../img/plus.png)
 }
 
 button.plus:focus, button.plus:hover {
@@ -392,7 +392,7 @@ button.plus:focus, button.plus:hover {
 }
 
 button.plus:active {
-  background: url(../img/plus-active.png)
+  background-image: url(../img/plus-active.png)
 }
 
 .minus span, button.minus:link, button.minus:visited, button.plus:active {
@@ -407,7 +407,7 @@ button.plus:active {
 }
 
 button.minus:link, button.minus:visited {
-  background: url(../img/minus.png)
+  background-image: url(../img/minus.png)
 }
 
 button.minus:focus, button.minus:hover {
@@ -416,7 +416,7 @@ button.minus:focus, button.minus:hover {
 }
 
 button.minus:active {
-  background: url(../img/minus-active.png);
+  background-image: url(../img/minus-active.png);
   background-repeat: no-repeat;
   background-position: center
 }
@@ -448,7 +448,7 @@ button.minus:active {
 .container-search-form input[type=checkbox]~label::before {
   width: 27px;
   content: "";
-  background: url(../img/checkbox-off.svg);
+  background-image: url(../img/checkbox-off.svg);
   cursor: pointer
 }
 
@@ -457,7 +457,7 @@ button.minus:active {
   width: 27px;
   height: 23px;
   content: "";
-  background: url(../img/checkbox-on.svg);
+  background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer
@@ -468,7 +468,7 @@ button.minus:active {
   width: 27px;
   height: 23px;
   content: "";
-  background: url(../img/checkbox-off-block.svg);
+  background-image: url(../img/checkbox-off-block.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer
@@ -479,7 +479,7 @@ button.minus:active {
   width: 27px;
   height: 23px;
   content: "";
-  background: url(../img/checkbox-on-block.svg);
+  background-image: url(../img/checkbox-on-block.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer
@@ -512,15 +512,15 @@ button.minus:active {
 }
 
 .up a, .up a:link, .up a:visited {
-  background: url(../img/icon-up-dir-static.png)
+  background-image: url(../img/icon-up-dir-static.png)
 }
 
 .up a:focus, .up a:hover {
-  background: url(../img/icon-up-dir.png)
+  background-image: url(../img/icon-up-dir.png)
 }
 
 .up a:active {
-  background: url(../img/icon-up-dir-click.png)
+  background-image: url(../img/icon-up-dir-click.png)
 }
 
 .down a {
@@ -531,15 +531,15 @@ button.minus:active {
 }
 
 .down a, .down a:link, .down a:visited {
-  background: url(../img/icon-down-dir-static.png)
+  background-image: url(../img/icon-down-dir-static.png)
 }
 
 .down a:focus, .down a:hover {
-  background: url(../img/icon-down-dir.png)
+  background-image: url(../img/icon-down-dir.png)
 }
 
 .down a.active:link, .down a.active:visited, .down a:active {
-  background: url(../img/icon-down-dir-click.png)
+  background-image: url(../img/icon-down-dir-click.png)
 }
 
 .copyright a {
@@ -550,15 +550,15 @@ button.minus:active {
 }
 
 .copyright a, .copyright a:link, .copyright a:visited {
-  background: url(../img/logo-htmlacademy.png)
+  background-image: url(../img/logo-htmlacademy.png)
 }
 
 .copyright a:focus, .copyright a:hover {
-  background: url(../img/logo-htmlacademy-hover.png)
+  background-image: url(../img/logo-htmlacademy-hover.png)
 }
 
 .copyright a:active {
-  background: url(../img/logo-htmlacademy-active.png)
+  background-image: url(../img/logo-htmlacademy-active.png)
 }
 
 .hotel-search-form input:link {

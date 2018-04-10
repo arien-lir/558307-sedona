@@ -258,7 +258,7 @@ a.search-link:active {
 
 .twitter a {
   background-color: #81b3d2;
-  background: url("../img/twitter-icon.svg");
+  background-image: url("../img/twitter-icon.svg");
 }
 
 .twitter span {
@@ -271,21 +271,21 @@ a.search-link:active {
 }
 
 .twitter a:link, .twitter a:visited {
-  background: url("../img/twitter-icon.svg");
+  background-image: url("../img/twitter-icon.svg");
   background-color: #81b3d2;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .twitter a:hover, .twitter a:focus {
-  background: url("../img/twitter-icon.svg");
+  background-image: url("../img/twitter-icon.svg");
   background-color: #669ec0;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .twitter a:active {
-  background: url("../img/twitter-icon.svg");
+  background-image: url("../img/twitter-icon.svg");
   opacity: 0.5;
   background-color: #5496bd;
   background-repeat: no-repeat;
@@ -294,7 +294,7 @@ a.search-link:active {
 
 .fb a {
   background-color: #81b3d2;
-  background: url("../img/fb-icon.svg");
+  background-image: url("../img/fb-icon.svg");
 }
 
 .fb span {
@@ -307,21 +307,21 @@ a.search-link:active {
 }
 
 .fb a:link, .fb a:visited {
-  background: url("../img/fb-icon.svg");
+  background-image: url("../img/fb-icon.svg");
   background-color: #81b3d2;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .fb a:hover, .fb a:focus {
-  background: url("../img/fb-icon.svg");
+  background-image: url("../img/fb-icon.svg");
   background-color: #669ec0;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .fb a:active {
-  background: url("../img/fb-icon.svg");
+  background-image: url("../img/fb-icon.svg");
   opacity: 0.5;
   background-color: #5496bd;
   background-repeat: no-repeat;
@@ -330,7 +330,7 @@ a.search-link:active {
 
 .youtube a {
   background-color: #81b3d2;
-  background: url("../img/youtube-icon.svg");
+  background-image: url("../img/youtube-icon.svg");
 }
 
 .youtube span {
@@ -343,21 +343,21 @@ a.search-link:active {
 }
 
 .youtube a:link, .youtube a:visited {
-  background: url("../img/youtube-icon.svg");
+  background-image: url("../img/youtube-icon.svg");
   background-color: #81b3d2;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .youtube a:hover, .youtube a:focus {
-  background: url("../img/youtube-icon.svg");
+  background-image: url("../img/youtube-icon.svg");
   background-color: #669ec0;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .youtube a:active {
-  background: url("../img/youtube-icon.svg");
+  background-image: url("../img/youtube-icon.svg");
   opacity: 0.5;
   background-color: #5496bd;
   background-repeat: no-repeat;
@@ -373,7 +373,7 @@ a.search-link:active {
 }
 
 button.calendar:link, button.calendar:visited {
-  background: url("../img/calendar.png");
+  background-image: url("../img/calendar.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -384,7 +384,7 @@ button.calendar:hover, button.calendar:focus {
 }
 
 button.calendar:active {
-  background: url("../img/calendar-active.png");
+  background-image: url("../img/calendar-active.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -398,7 +398,7 @@ button.calendar:active {
 }
 
 button.plus:link, button.plus:visited {
-  background: url("../img/plus.png");
+  background-image: url("../img/plus.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -409,7 +409,7 @@ button.plus:hover, button.plus:focus {
 }
 
 button.plus:active {
-  background: url("../img/plus-active.png");
+  background-image: url("../img/plus-active.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -423,7 +423,7 @@ button.plus:active {
 }
 
 button.minus:link, button.minus:visited {
-  background: url("../img/minus.png");
+  background-image: url("../img/minus.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -434,7 +434,7 @@ button.minus:hover, button.minus:focus {
 }
 
 button.minus:active {
-  background: url("../img/minus-active.png");
+  background-image: url("../img/minus-active.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -470,7 +470,7 @@ button.minus:active {
   width: 27px;
   height: 23px;
   content: "";
-  background: url("../img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -481,7 +481,7 @@ button.minus:active {
   width: 27px;
   height: 23px;
   content: "";
-  background: url("../img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -492,7 +492,7 @@ button.minus:active {
   width: 27px;
   height: 23px;
   content: "";
-  background: url("../img/checkbox-off-block.svg");
+  background-image: url("../img/checkbox-off-block.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -503,7 +503,7 @@ button.minus:active {
   width: 27px;
   height: 23px;
   content: "";
-  background: url("../img/checkbox-on-block.svg");
+  background-image: url("../img/checkbox-on-block.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -534,19 +534,19 @@ button.minus:active {
   width: 11px;
   height: 10px;
   margin-top: 5px;
-  background: url("../img/icon-up-dir-static.png");
+  background-image: url("../img/icon-up-dir-static.png");
 }
 
 .up a:link, .up a:visited {
-  background: url("../img/icon-up-dir-static.png");
+  background-image: url("../img/icon-up-dir-static.png");
 }
 
 .up a:hover, .up a:focus {
-  background: url("../img/icon-up-dir.png");
+  background-image: url("../img/icon-up-dir.png");
 }
 
 .up a:active {
-  background: url("../img/icon-up-dir-click.png");
+  background-image: url("../img/icon-up-dir-click.png");
 }
 
 .down a {
@@ -554,23 +554,23 @@ button.minus:active {
   width: 11px;
   height: 10px;
   margin-top: 5px;
-  background: url("../img/icon-down-dir-static.png");
+  background-image: url("../img/icon-down-dir-static.png");
 }
 
 .down a:link, .down a:visited {
-  background: url("../img/icon-down-dir-static.png");
+  background-image: url("../img/icon-down-dir-static.png");
 }
 
 .down a:hover, .down a:focus {
-  background: url("../img/icon-down-dir.png");
+  background-image: url("../img/icon-down-dir.png");
 }
 
 .down a.active:link, .down a.active:visited {
-  background: url("../img/icon-down-dir-click.png");
+  background-image: url("../img/icon-down-dir-click.png");
 }
 
 .down a:active {
-  background: url("../img/icon-down-dir-click.png");
+  background-image: url("../img/icon-down-dir-click.png");
 }
 
 .copyright a {
@@ -578,19 +578,19 @@ button.minus:active {
   width: 115px;
   height: 41px;
   margin-top: 5px;
-  background: url("../img/logo-htmlacademy.png");
+  background-image: url("../img/logo-htmlacademy.png");
 }
 
 .copyright a:link, .copyright a:visited {
-  background: url("../img/logo-htmlacademy.png");
+  background-image: url("../img/logo-htmlacademy.png");
 }
 
 .copyright a:hover, .copyright a:focus {
-  background: url("../img/logo-htmlacademy-hover.png");
+  background-image: url("../img/logo-htmlacademy-hover.png");
 }
 
 .copyright a:active {
-  background: url("../img/logo-htmlacademy-active.png");
+  background-image: url("../img/logo-htmlacademy-active.png");
 }
 
 .hotel-search-form input:link {
