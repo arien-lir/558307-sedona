@@ -369,24 +369,22 @@ a.search-link:active {
   width: 21px;
   height: 22px;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 button.calendar:link, button.calendar:visited {
   background-image: url("../img/calendar.png");
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 button.calendar:hover, button.calendar:focus {
   outline: none;
-  background: url("../img/calendar-hover.png") no-repeat center;
+  background-image: url("../img/calendar-hover.png");
+  background-repeat: no-repeat;
 }
 
 button.calendar:active {
   background-image: url("../img/calendar-active.png");
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .plus span {
@@ -394,24 +392,22 @@ button.calendar:active {
   width: 11px;
   height: 11px;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 button.plus:link, button.plus:visited {
   background-image: url("../img/plus.png");
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 button.plus:hover, button.plus:focus {
   outline: none;
-  background: url("../img/plus-hover.png") no-repeat center;
+  background-image: url("../img/plus-hover.png");
+  background-repeat: no-repeat;
 }
 
 button.plus:active {
   background-image: url("../img/plus-active.png");
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .minus span {
@@ -419,24 +415,22 @@ button.plus:active {
   width: 12px;
   height: 3px;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 button.minus:link, button.minus:visited {
   background-image: url("../img/minus.png");
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 button.minus:hover, button.minus:focus {
   outline: none;
-  background: url("../img/minus-hover.png") no-repeat center;
+  background-image: url("../img/minus-hover.png");
+  background-repeat: no-repeat;
 }
 
 button.minus:active {
   background-image: url("../img/minus-active.png");
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .container-search-form input[type="checkbox"] {
@@ -1195,27 +1189,55 @@ button.btn-transparent:hover {
 
 .hotel-search-form .plus {
   position: absolute;
-  background: url("../img/plus.png") no-repeat center;
-  background-position: center;
-  right: 10px;
+  background-image: url("../img/plus.png");
+  background-repeat: no-repeat;
+  margin-right: 14px;
+  left: 201px;
+  top: 14px;
+  width: 20px;
+  height: 20px;
+}
+
+.hotel-search-form .plus-child {
+  position: absolute;
+  background-image: url("../img/plus.png");
+  background-repeat: no-repeat;
+  left: 155px;
+  margin-right: 13px;
+  top: 14px;
   width: 20px;
   height: 20px;
 }
 
 .hotel-search-form .minus {
   position: absolute;
-  background: url("../img/minus.png") no-repeat center;
-  background-position: center;
-  right: 83px;
+  background-image: url("../img/minus.png");
+  background-repeat: no-repeat;
+  margin-right: 89px;
+  left: 125px;
+  top: 18px;
+  width: 20px;
+  height: 20px;
+}
+
+.hotel-search-form .minus-child {
+  position: absolute;
+  background-image: url("../img/minus.png");
+  background-repeat: no-repeat;
+  margin-right: 88px;
+  left: 79px;
+  top: 18px;
   width: 20px;
   height: 20px;
 }
 
 .hotel-search-form .calendar {
   position: absolute;
-  background: url("../img/calendar.png") no-repeat center;
-  background-position: center;
-  right: 5px;
+  background-image: url("../img/calendar.png");
+  background-repeat: no-repeat;
+  margin-right: 9px;
+  left: 428px;
+  top: 8px;
   width: 30px;
   height: 30px;
 }
