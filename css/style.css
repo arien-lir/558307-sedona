@@ -867,7 +867,7 @@ button.btn-transparent:hover {
 .meal p {
   margin: 0;
   padding: 0;
-  padding: 23px 54px 81px 54px;
+  padding: 23px 50px 81px 50px;
 }
 
 .gift img {
@@ -930,7 +930,7 @@ button.btn-transparent:hover {
 .container-bridge h2 {
   margin: 0;
   padding: 0;
-  padding: 46px 125px 24px;
+  padding: 46px 111px 24px;
 }
 
 .container-bridge span {
@@ -1096,6 +1096,12 @@ button.btn-transparent:hover {
   background-color: #ffffff;
   position: absolute;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hotel-search-form p {
+  position: relative;
 }
 
 .hotel-search-form button {
@@ -1161,6 +1167,7 @@ button.btn-transparent:hover {
   padding-top: 10px;
   padding-bottom: 9px;
   width: 114px;
+  height: 38px;
   text-align: center;
 }
 
@@ -1175,6 +1182,7 @@ button.btn-transparent:hover {
   line-height: 26px;
   text-transform: uppercase;
   width: 346px;
+  height: 38px;
 }
 
 .hotel-search-form button {
@@ -1186,6 +1194,7 @@ button.btn-transparent:hover {
 }
 
 .hotel-search-form .plus {
+  position: absolute;
   background: url("../img/plus.png") no-repeat center;
   background-position: center;
   right: 10px;
@@ -1194,6 +1203,7 @@ button.btn-transparent:hover {
 }
 
 .hotel-search-form .minus {
+  position: absolute;
   background: url("../img/minus.png") no-repeat center;
   background-position: center;
   right: 83px;
@@ -1202,6 +1212,7 @@ button.btn-transparent:hover {
 }
 
 .hotel-search-form .calendar {
+  position: absolute;
   background: url("../img/calendar.png") no-repeat center;
   background-position: center;
   right: 5px;
@@ -1597,7 +1608,7 @@ button.btn-transparent:hover {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 30px;
   vertical-align: top;
   text-align: center;
   cursor: pointer;
@@ -1610,6 +1621,7 @@ button.btn-transparent:hover {
 
 .price-range input {
   width: 40px;
+  height: 32px;
   margin: 0;
   color: inherit;
   font: inherit;
