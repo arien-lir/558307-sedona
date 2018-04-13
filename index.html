@@ -103,25 +103,29 @@
       <section class="container-hotel-search-form">
         <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="get">
           <p><label for="arrival-date-field">Дата заезда:</label>
-            <input type="text" id="arrival-date-field" name="arrival date" value="24 апреля 2017">
+            <input class="input-wide" type="text" id="arrival-date-field" name="arrival date" value="24 апреля 2017">
             <button class="calendar"><span class="visually-hidden">Выбрать дату заезда</span></button>
           </p>
           <p><label for="departure-date-field">Дата выезда:</label>
-            <input type="text" id="departure-date-field" name="departure date" value="4 июля 2017">
+            <input class="input-wide" type="text" id="departure-date-field" name="departure date" value="4 июля 2017">
             <button class="calendar"><span class="visually-hidden">Выбрать дату выезда</span></button>
           </p>
           <p>
             <span class="container-adult">
-            <label class="adult" for="adult-number-field">Взрослые:</label>
-            <button class="minus"><span class="visually-hidden">Уменьшить количество взрослых</span></button>
+              <label class="adult" for="adult-number-field">Взрослые:</label>
+              <span class="container-input">
+                <button class="minus"><span class="visually-hidden">Уменьшить количество взрослых</span></button>
             <input type="text" id="adult-number-field" name="adult" value="2">
             <button class="plus"><span class="visually-hidden">Увеличить количество взрослых</span></button>
             </span>
+            </span>
             <span class="container-child">
             <label for="child-number-field">Дети:</label>
-            <button class="minus-child"><span class="visually-hidden">Уменьшить количество детей</span></button>
+            <span class="container-input">
+            <button class="minus"><span class="visually-hidden">Уменьшить количество детей</span></button>
             <input type="text" id="child-number-field" name="child" value="0">
-            <button class="plus-child"><span class="visually-hidden">Увеличить количество детей</span></button>
+            <button class="plus"><span class="visually-hidden">Увеличить количество детей</span></button>
+            </span>
             </span>
           </p>
           <p><a class="search-link" href="#">Найти</a></p>

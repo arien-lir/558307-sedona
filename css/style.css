@@ -1149,22 +1149,6 @@ button.btn-transparent:hover {
   cursor: pointer
 }
 
-.hotel-search-form button.plus {
-  position: relative;
-}
-
-.hotel-search-form button.plus-child {
-  position: relative;
-}
-
-.hotel-search-form button.minus {
-  position: relative;
-}
-
-.hotel-search-form button.minus-child {
-  position: relative;
-}
-
 .map iframe {
   width: 1200px;
   height: 586px;
@@ -1218,6 +1202,13 @@ button.btn-transparent:hover {
   padding: 0;
 }
 
+.container-input {
+  display: inline-block;
+  position: relative;
+  width: 114px;
+  height: 38px;
+}
+
 .hotel-search-form input {
   margin: 0;
   padding: 0;
@@ -1228,7 +1219,7 @@ button.btn-transparent:hover {
   text-align: center;
 }
 
-.hotel-search-form input:nth-child(2) {
+.hotel-search-form input.input-wide {
   margin: 0;
   padding: 0;
   padding-left: 13px;
@@ -1244,54 +1235,28 @@ button.btn-transparent:hover {
 
 .hotel-search-form .plus {
   position: absolute;
+  top: 0;
+  right: 0;
   z-index: 2;
   border: none;
   background-image: url("../img/plus.png");
   background-repeat: no-repeat;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50% -50%);
-  width: 20px;
-  height: 20px;
-}
-
-.hotel-search-form .plus-child {
-  position: absolute;
-  z-index: 2;
-  border: none;
-  background-image: url("../img/plus.png");
-  background-repeat: no-repeat;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50% -50%);
-  width: 20px;
-  height: 20px;
+  background-position: center;
+  width: 38px;
+  height: 38px;
 }
 
 .hotel-search-form .minus {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 2;
   border: none;
   background-image: url("../img/minus.png");
   background-repeat: no-repeat;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50% -50%);
-  width: 20px;
-  height: 20px;
-}
-
-.hotel-search-form .minus-child {
-  position: absolute;
-  z-index: 2;
-  border: none;
-  background-image: url("../img/minus.png");
-  background-repeat: no-repeat;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50% -50%);
-  width: 20px;
-  height: 20px;
+  background-position: center;
+  width: 38px;
+  height: 38px;
 }
 
 .hotel-search-form .calendar {
