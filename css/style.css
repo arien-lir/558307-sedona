@@ -410,6 +410,29 @@ button.plus:active {
   background-repeat: no-repeat;
 }
 
+.plus-child span {
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-repeat: no-repeat;
+}
+
+button.plus-child:link, button.plus-child:visited {
+  background-image: url("../img/plus.png");
+  background-repeat: no-repeat;
+}
+
+button.plus-child:hover, button.plus-child:focus {
+  outline: none;
+  background-image: url("../img/plus-hover.png");
+  background-repeat: no-repeat;
+}
+
+button.plus-child:active {
+  background-image: url("../img/plus-active.png");
+  background-repeat: no-repeat;
+}
+
 .minus span {
   display: block;
   width: 12px;
@@ -429,6 +452,29 @@ button.minus:hover, button.minus:focus {
 }
 
 button.minus:active {
+  background-image: url("../img/minus-active.png");
+  background-repeat: no-repeat;
+}
+
+.minus-child span {
+  display: block;
+  width: 12px;
+  height: 3px;
+  background-repeat: no-repeat;
+}
+
+button.minus-child:link, button.minus-child:visited {
+  background-image: url("../img/minus.png");
+  background-repeat: no-repeat;
+}
+
+button.minus-child:hover, button.minus-child:focus {
+  outline: none;
+  background-image: url("../img/minus-hover.png");
+  background-repeat: no-repeat;
+}
+
+button.minus-child:active {
   background-image: url("../img/minus-active.png");
   background-repeat: no-repeat;
 }
@@ -1100,6 +1146,23 @@ button.btn-transparent:hover {
 
 .hotel-search-form button {
   background: none;
+  cursor: pointer
+}
+
+.hotel-search-form button.plus {
+  position: relative;
+}
+
+.hotel-search-form button.plus-child {
+  position: relative;
+}
+
+.hotel-search-form button.minus {
+  position: relative;
+}
+
+.hotel-search-form button.minus-child {
+  position: relative;
 }
 
 .map iframe {
@@ -1179,64 +1242,64 @@ button.btn-transparent:hover {
   height: 38px;
 }
 
-.hotel-search-form button {
-  position: absolute;
-  z-index: 2;
-  border: 0;
-  background: none;
-  cursor: pointer;
-}
-
 .hotel-search-form .plus {
   position: absolute;
+  z-index: 2;
+  border: none;
   background-image: url("../img/plus.png");
   background-repeat: no-repeat;
-  margin-right: 14px;
-  left: 201px;
-  top: 14px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% -50%);
   width: 20px;
   height: 20px;
 }
 
 .hotel-search-form .plus-child {
   position: absolute;
+  z-index: 2;
+  border: none;
   background-image: url("../img/plus.png");
   background-repeat: no-repeat;
-  left: 155px;
-  margin-right: 13px;
-  top: 14px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% -50%);
   width: 20px;
   height: 20px;
 }
 
 .hotel-search-form .minus {
   position: absolute;
+  z-index: 2;
+  border: none;
   background-image: url("../img/minus.png");
   background-repeat: no-repeat;
-  margin-right: 89px;
-  left: 125px;
-  top: 18px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% -50%);
   width: 20px;
   height: 20px;
 }
 
 .hotel-search-form .minus-child {
   position: absolute;
+  z-index: 2;
+  border: none;
   background-image: url("../img/minus.png");
   background-repeat: no-repeat;
-  margin-right: 88px;
-  left: 79px;
-  top: 18px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% -50%);
   width: 20px;
   height: 20px;
 }
 
 .hotel-search-form .calendar {
   position: absolute;
+  border: none;
   background-image: url("../img/calendar.png");
   background-repeat: no-repeat;
-  margin-right: 9px;
-  left: 428px;
+  right: 0;
   top: 8px;
   width: 30px;
   height: 30px;
