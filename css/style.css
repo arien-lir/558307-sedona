@@ -687,6 +687,7 @@ button.btn-transparent:hover {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 2;
 }
@@ -840,6 +841,7 @@ button.btn-transparent:hover {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -964,6 +966,7 @@ button.btn-transparent:hover {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -1137,6 +1140,8 @@ button.btn-transparent:hover {
   position: absolute;
   top: 0;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -1204,8 +1209,17 @@ button.btn-transparent:hover {
 
 .container-input {
   display: inline-block;
+  vertical-align: middle;
   position: relative;
   width: 114px;
+  height: 38px;
+}
+
+.container-input-wide {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 346px;
   height: 38px;
 }
 
@@ -1214,15 +1228,22 @@ button.btn-transparent:hover {
   padding: 0;
   padding-top: 10px;
   padding-bottom: 9px;
+  padding-left: 38px;
+  padding-right: 38px;
   width: 114px;
   height: 38px;
   text-align: center;
+}
+
+.hotel-search-form input::-ms-clear {
+  display: none;
 }
 
 .hotel-search-form input.input-wide {
   margin: 0;
   padding: 0;
   padding-left: 13px;
+  padding-right: 38px;
   padding-top: 5px;
   padding-bottom: 4px;
   text-align: left;
@@ -1261,13 +1282,13 @@ button.btn-transparent:hover {
 
 .hotel-search-form .calendar {
   position: absolute;
+  top: 8px;
+  right: 0;
   border: none;
   background-image: url("../img/calendar.png");
   background-repeat: no-repeat;
-  right: 0;
-  top: 8px;
   width: 30px;
-  height: 30px;
+  height: 38px;
 }
 
 .container-adult {
@@ -1651,6 +1672,7 @@ button.btn-transparent:hover {
   height: 22px;
   background: #ffffff;
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
